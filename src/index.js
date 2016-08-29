@@ -16,7 +16,7 @@ export default function watch(files, scripts, {
   watcher
     .on('ready', () => {
       if (verbose) {
-        log.info('nswatch', 'ready')
+        log.info('nswatch', `watcher for \`${chalk.bold(scripts)}\` is ready`)
       }
       init = true
     })

@@ -16,5 +16,6 @@ const main = (input, flags) => {
 
 cli
   .usage('nswatch [files] --script [scripts]')
+  .option('V, verbose', 'Display more verbose output', true)
   .command('*', 'Run npm scripts and watch for changes', main)
   .parse()

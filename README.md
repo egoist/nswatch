@@ -12,7 +12,7 @@ $ npm install --save nswatch
 
 ## Usage
 
-Asumming you have an npm script `build` to compile something, then drop a `watch.js` in your project:
+Assuming you have an npm script `build` to compile something, then drop a `watch.js` in your project:
 
 ```js
 const watch = require('nswatch')

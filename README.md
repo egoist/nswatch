@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-$ npm install --save nswatch
+$ npm install -D nswatch
 ```
 
 ## Usage

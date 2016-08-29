@@ -22,7 +22,7 @@ watch('src/*.js', ['build'])
 
 When you run `node watch`, the `npm run build` will be invoked right away, and will also be invoked when file changes are detected.
 
-<img src="http://ww4.sinaimg.cn/large/a15b4afegw1f7aiojr1n7j20u00l4gos.jpg" width="500" />
+<img src="./media/preview.png" width="500" />
 
 ### Parallel and Sequence
 

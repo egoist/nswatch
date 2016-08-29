@@ -1,6 +1,6 @@
 {
   "name": "nswatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Like gulp.watch but for npm scripts.",
   "license": "MIT",
   "repository": "egoist/nswatch",

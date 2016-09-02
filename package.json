@@ -1,6 +1,6 @@
 {
   "name": "nswatch",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Like gulp.watch but for npm scripts.",
   "license": "MIT",
   "repository": "egoist/nswatch",
@@ -17,7 +17,9 @@
     "build": "bubleup"
   },
   "watch": {
-    "src": ["build"]
+    "src": [
+      "build"
+    ]
   },
   "bin": "cli.js",
   "files": [

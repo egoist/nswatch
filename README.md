@@ -31,7 +31,7 @@ When you run `node watch`, the `npm run build` will be invoked right away, and w
 ```js
 // run in parallel
 watch('src/a.js', ['task-a', 'task-b'])
-// run insequence
+// run in sequence
 // use ! as seperator
 watch('src/b.js', 'task-a!task-b')
 ```

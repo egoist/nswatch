@@ -44,6 +44,25 @@ $ npm install -g nswatch
 
 You can also use `nswatch` as a command-line program:
 
+### Configure `watch` in `package.json`
+
+```json
+{
+  "watch": {
+    "./src/*.js": ["build"],
+    "./src/*.css": "compile!minify"
+  }
+}
+```
+
+Then run:
+
+```bash
+$ nswatch
+```
+
+Or you can pass the config via CLI arguments, this way configurations in `package.json` will be ignored.
+
 ```bash
 # in parallel
 $ nswatch "src/*.js" --script foo --script bar

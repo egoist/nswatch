@@ -16,6 +16,9 @@
     "test": "xo src/*.js",
     "build": "bubleup"
   },
+  "watch": {
+    "src": ["build"]
+  },
   "bin": "cli.js",
   "files": [
     "cli.js",
@@ -42,6 +45,7 @@
     "cac": "^2.2.0",
     "chalk": "^1.1.3",
     "chokidar": "^1.6.0",
-    "cross-spawn": "^4.0.0"
+    "cross-spawn": "^4.0.0",
+    "read-pkg": "^1.1.0"
   }
 }

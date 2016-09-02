@@ -7,7 +7,14 @@ const watch = require('./')
 const cli = cac()
 
 const runWatchInPkg = flags => {
-  const pkg = readPkg.sync()
+  let pkg = {}
+  try {
+    pkg = readPkg.sync()
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      throw err
+    }
+  }
   const watchConfig = pkg.watch
   if (watchConfig) {
     for (const files of Object.keys(watchConfig)) {

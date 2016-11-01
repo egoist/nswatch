@@ -44,7 +44,7 @@
     }
   },
   "dependencies": {
-    "cac": "^2.2.0",
+    "cac": "^3.0.3",
     "chalk": "^1.1.3",
     "chokidar": "^1.6.0",
     "cross-spawn": "^4.0.0",

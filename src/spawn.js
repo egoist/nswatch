@@ -16,6 +16,7 @@ export default function spawn(command, args = [], cb = defaultCb) {
     if (code !== 0) {
       err = `script ${script} exited with wrong status code ${code}`
     }
+
     cb(err)
   })
 }

@@ -9,6 +9,7 @@ export default function runSequence(scripts) {
         if (err) {
           log.error(script, err)
         }
+
         exec()
       })
     }

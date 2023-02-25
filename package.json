@@ -1,5 +1,5 @@
 {
-  "name": "@egoit/nswatch",
+  "name": "@egoist/nswatch",
   "publishConfig": {
     "access": "public"
   },

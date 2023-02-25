@@ -1,5 +1,8 @@
 {
-  "name": "nswatch",
+  "name": "@egoit/nswatch",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.3.0",
   "type": "module",
   "description": "Like gulp.watch but for npm scripts.",

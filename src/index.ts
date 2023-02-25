@@ -1,10 +1,10 @@
 import chokidar from "chokidar";
-import chalk from "chalk";
+import * as colors from "colorette";
 import run from "./run";
 import log from "./log";
 
 export function watch(
-  files: string[],
+  files: string | string[],
   scripts: string | string[],
   { verbose = true } = {}
 ) {
@@ -18,7 +18,10 @@ export function watch(
   watcher
     .on("ready", () => {
       if (verbose) {
-        log.info("nswatch", `watcher for \`${chalk.bold(scripts)}\` is ready`);
+        log.info(
+          "nswatch",
+          `watcher for ${colors.bold(JSON.stringify(scripts))} is ready`
+        );
       }
       init = true;
     })
@@ -28,7 +31,10 @@ export function watch(
         watcher.unwatch(p);
       }
       if (init && verbose) {
-        log.info("nswatch", `rerun \`${chalk.bold(scripts)}\` due to changes`);
+        log.info(
+          "nswatch",
+          `rerun ${colors.bold(JSON.stringify(scripts))} due to changes`
+        );
       }
       if (init) {
         run(scripts);

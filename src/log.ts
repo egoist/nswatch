@@ -1,13 +1,13 @@
-import chalk from "chalk";
+import * as colors from "colorette";
 
-const log = {};
+const log = {
+  info: (tag: string, msg: any) => {
+    console.log(`${colors.yellow(`> [${tag}]`)}`, msg);
+  },
 
-log.info = (tag: string, msg: string) => {
-  console.log(`${chalk.yellow(`> [${tag}]`)} ${msg}`);
-};
-
-log.error = (tag: string, msg: string) => {
-  console.log(`${chalk.red(`> [${tag}]`)} ${msg}`);
+  error: (tag: string, msg: any) => {
+    console.log(`${colors.red(`> [${tag}]`)}`, msg);
+  },
 };
 
 export default log;

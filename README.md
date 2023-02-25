@@ -15,9 +15,9 @@ $ npm install -D nswatch
 Assuming you have an npm script `build` to compile something, then drop a `watch.js` in your project:
 
 ```js
-const watch = require('nswatch')
+import { watch } from "nswatch";
 
-watch('src/*.js', ['build'])
+watch("src/*.js", ["build"]);
 ```
 
 When you run `node watch`, the `npm run build` will be invoked right away, and will also be invoked when file changes are detected.
@@ -30,10 +30,10 @@ When you run `node watch`, the `npm run build` will be invoked right away, and w
 
 ```js
 // run in parallel
-watch('src/a.js', ['task-a', 'task-b'])
+watch("src/a.js", ["task-a", "task-b"]);
 // run in sequence
 // use ! as seperator
-watch('src/b.js', 'task-a!task-b')
+watch("src/b.js", "task-a!task-b");
 ```
 
 ## CLI

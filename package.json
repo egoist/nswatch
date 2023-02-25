@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "echo lol",
-    "build": "tsup src/index.ts src/cli.ts --format esm"
+    "build": "tsup src/index.ts src/cli.ts --format esm",
+    "prepublishOnly": "npm run build"
   },
   "main": "./dist/index.js",
   "bin": "./dist/cli.js",

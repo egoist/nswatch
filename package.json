@@ -17,7 +17,8 @@
     "test": "echo lol",
     "build": "tsup src/index.ts src/cli.ts --format esm"
   },
-  "bin": "dist/clicli.js",
+  "main": "./dist/index.js",
+  "bin": "./dist/cli.js",
   "files": [
     "dist"
   ],
